@@ -5,12 +5,13 @@ header {
 }
 
 
-.container {
+/* .container {
     width: 1700px;
     margin: auto;
+    padding: 0;
    
     
-}
+} */
 
 .content {
     overflow: hidden;
@@ -36,11 +37,13 @@ header {
     margin: auto;
     padding: 0;
     overflow: hidden;
+    z-index: 2;
 }
 
 .menu li {
     list-style: none;
     float: left;
+    z-index: 2;
 }
 
 .menu li a {
@@ -49,11 +52,13 @@ header {
     padding: 17px 30px;
     display: block;
     text-transform: capitalize;
+    z-index: 2;
 }
 
 .menu li a:hover {
     background-color:  #000099;
     height: 70px;
+    z-index: 2;
 }
 
 .subOfSub {
@@ -61,22 +66,27 @@ header {
     background-color: #0000e6;
     position: absolute;
     display: none;
+    z-index: 2;
 }
 
 .subOfSub li {
     float: none;
+    z-index: 2;
 }
 
 .subOfSub li a:hover {
     background-color: #4d4dff;
+    z-index: 2;
 }
 
 .subMenu:hover .subOfSub {
     display: block;
+    z-index: 2;
 }
 
 .subOfSub-menu {
     position: relative;
+    z-index: 2;
 }
 
 .lastMenu {
@@ -87,6 +97,7 @@ header {
    position: absolute;
    width: 100%;
    display: none;
+   z-index: 2;
    
 }
 
@@ -94,10 +105,13 @@ header {
     background-color: #2323b1;
    width: 100%;
    height: 100%;
+   z-index: 2;
 }
+
 
 .subOfSub-menu:hover .lastMenu {
     display: block;
+    z-index: 2;
 }
 
 
@@ -105,32 +119,44 @@ header {
 
 body{
  
-margin: 0;    
+ margin: 0;    
   padding: 0;    
 }
 
 
-.orange-bg{
+/* .orange-bg{
     margin-top: 50px;
     background-color: #fceae8;
     border-radius: 20px;
   
-}
+} */
    
 .carousel-inner {
     width: 100%;
+    height: 114vh; /* Set the height of the carousel to the full viewport height */
+    overflow: hidden; /* Hide any overflowing content */
 }
 
-
-.carousel-item{
+.carousel-item {
     width: 100%;
+    height: 100%; /* Set the height of each carousel item to the full viewport height */
 }
+
+.carousel-item img {
+    width: 100%; /* Set the image width to 100% of its container */
+    height: 100%; /* Set the image height to 100% of its container */
+    object-fit: cover; /* Maintain aspect ratio and cover the full container without gaps */
+}
+
+/* You may need to adjust other styles for text and buttons inside the carousel for optimal placement. */
+
+
 .price{
     color: rgb(28, 28, 103);
 }
 
 
-.col-md-5 img {
+/* .col-md-5 img {
 position: cover;
     width: 1250px;
     height: 800px;
@@ -141,7 +167,7 @@ position: cover;
 .categories img{
     width: 100%;
     padding-left: 100px;
-}
+} */
 
 .footer {
 
