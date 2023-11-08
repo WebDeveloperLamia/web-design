@@ -12,6 +12,32 @@ header {
    
     
 } */
+.marquee-container {
+    background-color: rgb(5, 130, 172);
+    height: 60px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    animation: marquee 10s linear infinite;
+  }
+  
+  .marquee h1 {
+    display: inline-block;
+    padding-right: 100%; /* Adjust this value to control the speed of scrolling */
+    color: #ffffff;
+    font-weight: 700; 
+}
+  
+  @keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  
 
 .content {
     overflow: hidden;
