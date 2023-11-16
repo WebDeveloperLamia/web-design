@@ -4,7 +4,11 @@ body {
     font-family: tahoma;
 }
 
-
+.container {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
 
 header {
     background-color: #14204a;
@@ -16,7 +20,7 @@ header {
 }
 
 .logoArea {
-    width: 22%;
+    width: 35%;
     height: 70px;
     float: left;
 }
@@ -26,7 +30,7 @@ header {
 }
 
 .menuArea {
-    width: 78%;
+    width: 65%;
     float: left;
 }
 
@@ -52,7 +56,7 @@ header {
 
 .menu li a:hover {
     background-color:  #000099;
-    height: 33px;
+    height: 34px;
 }
 
 .subOfSub {
@@ -70,6 +74,7 @@ header {
     background-color: #4d4dff;
 }
 
+
 .subMenu:hover .subOfSub {
     display: block;
 }
@@ -79,21 +84,28 @@ header {
 }
 
 .lastMenu {
-    padding: 0;
-    background-color: 	 #6666ff;
-    position: absolute;
-    top: 0;
+    background-color:  #6666ff;
     left: 100%;
+    padding: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
     display: none;
-}
+    
+ }
+ 
 
 .lastMenu li a:hover {
-    background-color: #9999ff;
+    background-color: #2323b1;
+    height: 100%;
+    width: 70%;
 }
+
 
 .subOfSub-menu:hover .lastMenu {
     display: block;
 }
+
 
 .container{
     display: flex;
