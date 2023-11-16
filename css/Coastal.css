@@ -113,7 +113,7 @@ header {
 }
 
 .picture{
-    background-image:url("../image/crown merinars.jpg");
+    background-image:url("../image/CROWN MARINERS.png");
     background-size: cover;
     overflow: hidden;
     height: 700px;
@@ -147,7 +147,7 @@ header {
     padding: 10px;
     background-color: #fff;
     border: 1px solid #ddd;
-    text-align: center;
+    text-align: left;
 }
 
 
