@@ -175,56 +175,47 @@ header {
  
 }
 
-.service {
-    width: 350px;
-    float: left;
-    margin: 18px 18px ;
-    box-shadow: 4px 1px 4px 1px rgb(19, 55, 95);
-    margin-left: 20px;
+.card {
+    width: 300px;
+    height:360px ;
+    background-color: #fff;
     border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(14, 10, 10, 0.1);
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+    float: left;
+    margin-left: 100px;
 }
 
-.service p {
-    padding-top: 15px;
+.card:hover {
+    transform: scale(1.05);
+    background-color: rgb(89, 134, 248);
 }
 
-.service img {
-    padding-left: 80px;
+.card img {
+    width: 150PX;
+    height: 150px;
+    margin-left:  80px;
+    margin-top: 10px;
+    border-radius: 80px;
 }
 
-h1 {
+.card-content {
+    padding: 40px;
+}
+
+h2 {
     text-align: center;
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #333;
 }
 
-.service1 {
-    width: 350px;
-    float: left;
-    margin: 18px 18px ;
-    box-shadow: 4px 1px 4px 1px rgb(19, 55, 95);
-    margin-left: 20px;
-    border-radius: 10px;
-}
-
-.service1 img {
-    padding-left: 70px;
-}
-
-.service2 {
-    width: 350px;
-    margin: 18px 18px;
-   float: left;
-   box-shadow: 4px 1px 4px 1px rgb(19, 55, 95);
-  margin-left: 20px;
-  border-radius: 10px;
-}
-
-.service2 img {
-    padding-left: 70px;
-}
-
-.service2 p{
-    padding-top: 25px;
-
+p {
+    color: black;
+    text-align: left;
+    padding: 12px;
 }
 
 .footer {

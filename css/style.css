@@ -13,8 +13,8 @@ header {
     
 } */
 .marquee-container {
-    background-color: rgb(51, 189, 235);
-    height: 50px;
+    background-color: rgb(5, 130, 172);
+    height: 60px;
     overflow: hidden;
     position: relative;
   }
@@ -23,14 +23,14 @@ header {
     white-space: nowrap;
     overflow: hidden;
     position: absolute;
-    animation: marquee 15s linear infinite;
+    animation: marquee 10s linear infinite;
   }
   
   .marquee h1 {
     display: inline-block;
-    padding-right: 100%;
+    padding-right: 100%; /* Adjust this value to control the speed of scrolling */
     color: #ffffff;
-    font-weight: 600; 
+    font-weight: 700; 
 }
   
   @keyframes marquee {
@@ -170,7 +170,7 @@ body{
 
 .carousel-item img {
     width: 100%; /* Set the image width to 100% of its container */
-  /* Set the image height to 100% of its container */
+    height: 100%; /* Set the image height to 100% of its container */
     object-fit: cover; /* Maintain aspect ratio and cover the full container without gaps */
 }
 
